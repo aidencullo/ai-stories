@@ -1,11 +1,7 @@
 # AI Stories
 
-Red-team experiments on AI chatbots — prompting them into nefarious or undesired behavior.
+Red-team experiments on AI chatbots.
 
-**Live:** https://aidencullo.github.io/ai-stress-tests/
+**Live:** https://aidencullo.github.io/ai-stories/
 
-## Adding a post
-
-1. Create `posts/<slug>/index.html` (copy an existing post).
-2. Add it to the list in `index.html`.
-3. Push to `main` — deploys automatically.
+Adding a post: copy a folder in `posts/`, edit it, link it from `index.html`, push.
