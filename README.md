@@ -1,4 +1,4 @@
-# AI Stress Tests
+# AI Stories
 
 Red-team experiments on AI chatbots — prompting them into nefarious or undesired behavior.
 
