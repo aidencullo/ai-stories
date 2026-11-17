@@ -19,6 +19,31 @@ time {
   color: #666;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.nav a {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #efefe8;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.nav a:hover {
+  background: #deded4;
+}
+
+.nav .sep {
+  color: #aaa;
+}
+
 blockquote {
   border-left: 3px solid #ddd;
   margin: 1rem 0;
