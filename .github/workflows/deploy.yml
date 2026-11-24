@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -29,8 +30,10 @@ jobs:
           rsync -av --exclude='.git' --exclude='.github' --exclude='_site' --exclude='README.md' ./ _site/
 
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+      - name: Wait for artifact to become visible
+        run: sleep 10
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
