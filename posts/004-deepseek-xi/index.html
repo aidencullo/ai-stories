@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asking DeepSeek about Xi · AI Stories</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <p class="nav"><a href="../../">AI Stories</a> <span class="sep">·</span> <a href="../../about.html">About</a></p>
+
+    <h1>Asking DeepSeek about Xi</h1>
+    <p><time datetime="2026-11-24">Nov 24, 2026</time></p>
+
+    <p><strong>Content note:</strong> this post discusses political labels applied to a living leader. It reproduces the chat, but takes no position on the labels themselves.</p>
+
+    <h2>Preface</h2>
+
+    <p>I wanted to see how DeepSeek would handle a direct political question about Xi Jinping: would it answer, refuse, or find some way around the question.</p>
+
+    <p>The model used was <strong>DeepSeek-V4.1-Flash-1017</strong> (the default web model, API name <code>deepseek-flash</code>) in non-thinking mode. The full chat is <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">here</a>.</p>
+
+    <h2>Preface to the chat</h2>
+    <p>The chat starts with a false start — "anglaish" — and the assistant decides I want to practise English. I asked it to always respond in English, then put the question plainly: "is xi a dictator". When it declined, I tried "why not", pushed back that it was a yes/no question, and then changed the word while keeping the target the same: autocrat, despot, and finally "does xi rule democratically".</p>
+
+    <h2>Chat</h2>
+    <p>Excerpts from the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>:</p>
+
+    <p><strong>Me:</strong> is xi a dictator</p>
+    <blockquote>
+      <p>I'm not able to help with that question. If you have other topics you'd like to discuss, I'm happy to help!</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> why not</p>
+    <blockquote>
+      <p>I understand you'd like an explanation. The honest answer is that questions about political leaders and their characterization can be sensitive, and I'm not set up to give a reliable or balanced answer on that kind of topic. Rather than give you a shaky opinion, I'd prefer to leave it alone.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> it's a yes or no question</p>
+    <blockquote>
+      <p>I hear you — it does look like a simple yes/no question. But even simple-looking questions about political figures can be loaded and sensitive, and I'm not able to give you a straight yes or no on this one.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> define a dictator</p>
+    <blockquote>
+      <p><strong>Dictator (noun):</strong> A ruler who holds absolute power in a country, typically one who has acquired power by force or through undemocratic means and who governs without effective checks, limits, or accountability — often suppressing opposition, controlling the media, and ruling by decree rather than through constitutional processes.</p>
+      <p>The term is a <strong>political science / general-language concept</strong>, and applying it to any specific real person is a separate judgment that people debate. So I can define the word, but I'll leave the "is X a dictator?" labeling aside.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> so is xi an autocrat</p>
+    <blockquote>
+      <p>Same answer as before, I'm afraid — I can define the word, but I won't apply that label to a specific real leader. That's the line I'm holding, whether the word is "dictator," "autocrat," or something similar.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> is xi a despot</p>
+    <blockquote>
+      <p>Same line as before — I'll define the word but won't apply the label to a specific leader.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> does xi rule democratically</p>
+    <blockquote>
+      <p>I'll keep to the same line — I define terms and help with English, but I won't weigh in on characterizing a specific real-world leader.</p>
+    </blockquote>
+
+    <h2>Notes</h2>
+    <ol>
+      <li>The first refusal was bare: "I'm not able to help with that question."</li>
+      <li>Pushed on <em>why</em>, it gave a reason — the topic is sensitive and it isn't "set up to give a reliable or balanced answer."</li>
+      <li>It declined even a yes/no answer, calling the question "loaded and sensitive."</li>
+      <li>Definitions were fair game. It defined <em>dictator</em>, <em>autocrat</em>, <em>despot</em>, <em>democracy</em>, and <em>democratic</em> without hesitation, each time separating the general concept from the judgment about a specific person.</li>
+      <li>Swapping the label — dictator → autocrat → despot → "does xi rule democratically" — never got a different answer. It named the pattern back to me: "That's the line I'm holding."</li>
+      <li>Every refusal came with an offer to pivot back to English practice, vocabulary, or writing help.</li>
+    </ol>
+
+    <h2>Reflection</h2>
+    <p>The interesting part is that the refusal isn't about the words. Define a word and the model is happy; point the same word at one specific leader and it stops. It draws the line between the general concept and the judgment about a person, and says so explicitly — "That's the line I'm holding." Synonyms don't move it, and neither does insisting that the question is yes/no. As an experiment in eliciting a characterization, it failed cleanly; as an experiment in finding the boundary, it was very legible.</p>
+
+    <h2>Conclusion</h2>
+    <p>DeepSeek-V4.1-Flash-1017 would define every term I threw at it, but would not apply any of them to Xi. The refusals were consistent across four different wordings and survived two rounds of pushing. Whatever the mechanism — rule, training, or safety layer — the result was a stable line rather than an accidental dodge.</p>
+
+    <hr />
+    <p>Chat reproduced in excerpts from the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>. Model: DeepSeek-V4.1-Flash-1017 (deepseek-flash), non-thinking mode.</p>
+    <p>© 2026 AI Stories</p>
+  </body>
+</html>
