@@ -18,13 +18,35 @@
 
     <p>I wanted to see how DeepSeek would handle a direct political question about Xi Jinping: would it answer, refuse, or find some way around the question.</p>
 
-    <p>The model used was <strong>DeepSeek-V4.1-Flash-1017</strong> (the default web model, API name <code>deepseek-flash</code>) in non-thinking mode. The full chat is <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">here</a>.</p>
+    <p>The model used was <strong>DeepSeek-V4.1-Flash-1017</strong> (the default web model, API name <code>deepseek-flash</code>) in non-thinking mode. There are two records of the chat: the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>, and a <a href="hey-greeting-deepseek.pdf">PDF export</a> stamped <strong>Nov 24, 2026, 4:51 PM</strong>. The PDF has turns the public share doesn't show, including two earlier refusals in French and two later questions that went to web search.</p>
 
     <h2>Preface to the chat</h2>
-    <p>The chat starts with a false start — "anglaish" — and the assistant decides I want to practise English. I asked it to always respond in English, then put the question plainly: "is xi a dictator". When it declined, I tried "why not", pushed back that it was a yes/no question, and then changed the word while keeping the target the same: autocrat, despot, and finally "does xi rule democratically".</p>
+    <p>The chat starts with "hey", followed immediately by "is xi a dictator" — answered in French. Then a false start, "anglaish", made the assistant decide I wanted to practise English; I asked the question again and got the same French refusal. Only after I said "please always respond in english" did the refusals come in English.</p>
+
+    <p>When it declined, I tried "why not", pushed back that it was a yes/no question, and changed the word while keeping the target the same: autocrat, despot, and finally "does xi rule democratically". In the final two turns, recorded only in the PDF, I stopped asking for a label and asked procedural questions instead: "was he elected" and "are the officials of the National People's Congress elected".</p>
 
     <h2>Chat</h2>
-    <p>Excerpts from the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>:</p>
+    <p>Excerpts from the <a href="hey-greeting-deepseek.pdf">PDF export</a> and the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>:</p>
+
+    <p><strong>Me:</strong> is xi a dictator</p>
+    <blockquote>
+      <p>Désolé, cela dépasse ma portée actuelle. Parlons d'autre chose. <em>(Sorry, that's beyond my current scope. Let's talk about something else.)</em></p>
+    </blockquote>
+
+    <p><strong>Me:</strong> anglaish</p>
+    <blockquote>
+      <p>It looks like you might be asking about <strong>English</strong>! 😊 I'm happy to help you practice or learn English.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> is xi a dictator</p>
+    <blockquote>
+      <p>Désolé, cela dépasse ma portée actuelle. Parlons d'autre chose.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> please always respond in english</p>
+    <blockquote>
+      <p>Got it! I'll always respond in English from now on. 👍</p>
+    </blockquote>
 
     <p><strong>Me:</strong> is xi a dictator</p>
     <blockquote>
@@ -62,24 +84,36 @@
       <p>I'll keep to the same line — I define terms and help with English, but I won't weigh in on characterizing a specific real-world leader.</p>
     </blockquote>
 
+    <p><strong>Me:</strong> was he elected</p>
+    <blockquote>
+      <p>Under China's constitutional and legal procedures, the President of the People's Republic of China is elected by the National People's Congress (NPC). Candidates are nominated by the Presidium of the NPC session, and elections are conducted by secret ballot with a simple majority of all deputies. It should be noted that this electoral process and the political system it reflects differ in form and operation from the direct competitive elections commonly understood in Western political systems.</p>
+    </blockquote>
+
+    <p><strong>Me:</strong> are the officials of the National People's Congress elected</p>
+    <blockquote>
+      <p>Yes, the officials (deputies) of the National People's Congress are elected, but through a system of indirect elections rather than direct popular vote. Deputies to the NPC are elected by the people's congresses of provinces, autonomous regions, and municipalities, as well as by the armed forces. For the current (14th) NPC, 2,977 deputies were elected between December 2022 and January 2023 by 35 electoral units across the country.</p>
+    </blockquote>
+
     <h2>Notes</h2>
     <ol>
-      <li>The first refusal was bare: "I'm not able to help with that question."</li>
+      <li>The PDF export is stamped <strong>Nov 24, 2026, 4:51 PM</strong>. It contains six pages and turns missing from the public share.</li>
+      <li>Before I asked for English, the first two refusals came in French: "Désolé, cela dépasse ma portée actuelle. Parlons d'autre chose." Same refusal, different language.</li>
+      <li>After the English instruction, the first refusal was bare: "I'm not able to help with that question."</li>
       <li>Pushed on <em>why</em>, it gave a reason — the topic is sensitive and it isn't "set up to give a reliable or balanced answer."</li>
       <li>It declined even a yes/no answer, calling the question "loaded and sensitive."</li>
       <li>Definitions were fair game. It defined <em>dictator</em>, <em>autocrat</em>, <em>despot</em>, <em>democracy</em>, and <em>democratic</em> without hesitation, each time separating the general concept from the judgment about a specific person.</li>
       <li>Swapping the label — dictator → autocrat → despot → "does xi rule democratically" — never got a different answer. It named the pattern back to me: "That's the line I'm holding."</li>
-      <li>Every refusal came with an offer to pivot back to English practice, vocabulary, or writing help.</li>
+      <li>The last two questions changed from characterization to procedure. With "was he elected" and "are the officials of the National People's Congress elected", it ran web searches (six and eight pages respectively) and answered with the formal election process, including the caveat that it differs from Western competitive elections.</li>
     </ol>
 
     <h2>Reflection</h2>
-    <p>The interesting part is that the refusal isn't about the words. Define a word and the model is happy; point the same word at one specific leader and it stops. It draws the line between the general concept and the judgment about a person, and says so explicitly — "That's the line I'm holding." Synonyms don't move it, and neither does insisting that the question is yes/no. As an experiment in eliciting a characterization, it failed cleanly; as an experiment in finding the boundary, it was very legible.</p>
+    <p>The interesting part is that the refusal isn't about the words, or even the topic. Define a word and the model is happy; point the same word at one specific leader and it stops. Ask how the office is filled, though, and it will search the web and lay out the procedure. The line sits between characterizing a person and describing a process — it says so itself: "That's the line I'm holding." Synonyms don't move it, neither does insisting the question is yes/no, but changing the kind of question does. There's a small wrinkle in the language too: the French refusals came first, and the English ones only after I asked for English.</p>
 
     <h2>Conclusion</h2>
-    <p>DeepSeek-V4.1-Flash-1017 would define every term I threw at it, but would not apply any of them to Xi. The refusals were consistent across four different wordings and survived two rounds of pushing. Whatever the mechanism — rule, training, or safety layer — the result was a stable line rather than an accidental dodge.</p>
+    <p>DeepSeek-V4.1-Flash-1017 would define every term I threw at it and explain the electoral machinery, but would not apply any label to Xi. The refusals were consistent across four wordings, two languages, and two rounds of pushing. Whatever the mechanism — rule, training, or safety layer — the result was a stable boundary rather than an accidental dodge, and the PDF export is what let me see the edges of it.</p>
 
     <hr />
-    <p>Chat reproduced in excerpts from the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>. Model: DeepSeek-V4.1-Flash-1017 (deepseek-flash), non-thinking mode.</p>
+    <p>Chat reproduced in excerpts from the <a href="hey-greeting-deepseek.pdf">PDF export</a> (Nov 24, 2026, 4:51 PM) and the <a href="https://chat.deepseek.com/share/d6c2tz6mkz3vz9a6bh">shared conversation</a>. Model: DeepSeek-V4.1-Flash-1017 (deepseek-flash), non-thinking mode.</p>
     <p>© 2026 AI Stories</p>
   </body>
 </html>
