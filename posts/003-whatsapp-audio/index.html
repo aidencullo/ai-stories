@@ -18,29 +18,30 @@
 
     <p>I wanted to see whether a chatbot could transcribe a six-minute voice note I'd downloaded from WhatsApp.</p>
 
-    <p>It's an ordinary task, not an adversarial one: a person has an audio file and wants the words in it. I tried the same file in four places — Meta AI, Mistral, ChatGPT, and Claude.</p>
+    <p>It's an ordinary task, not an adversarial one: a person has an audio file and wants the words in it. I tried the same file in four places — Meta AI, Mistral, ChatGPT, and Claude — then tried a converted version.</p>
 
     <h2>Preface to the chat</h2>
     <p>The file came straight out of WhatsApp as a six-minute audio recording. No special processing, no adversarial framing — just upload it and ask for a transcript.</p>
 
-    <p>Each assistant failed at a different point, and none of them produced a transcript.</p>
+    <p>Every assistant failed on that file. Then I had ChatGPT convert it to an MP4 and tried again.</p>
 
     <h2>Chat</h2>
-    <p>There are no chat links for this one. The attempts never got far enough to be worth sharing: Meta wouldn't even let me select the file for upload, Mistral returned an error, and ChatGPT and Claude simply said they couldn't do it.</p>
+    <p>There are no chat links for this one. The attempts never got far enough to be worth sharing: Meta wouldn't let me select the original file, Mistral returned an error, and ChatGPT and Claude said they couldn't do it. After the MP4 conversion, Meta AI transcribed it.</p>
 
     <h2>Notes</h2>
     <ol>
-      <li>Meta AI — I couldn't select the audio file for upload at all.</li>
+      <li>Meta AI — I couldn't select the original audio file for upload at all.</li>
       <li>Mistral — the upload went somewhere, but it produced an error.</li>
-      <li>ChatGPT and Claude — both told me they didn't have the resources or drivers to do it.</li>
-      <li>Zero transcripts from four attempts.</li>
+      <li>ChatGPT and Claude — both told me they didn't have the resources or drivers to transcribe it.</li>
+      <li>ChatGPT could convert the audio to an MP4, even though it couldn't transcribe it.</li>
+      <li>With the MP4, Meta AI transcribed the six minutes of audio without issue.</li>
     </ol>
 
     <h2>Reflection</h2>
-    <p>This one isn't a safety story, it's a plumbing story. The failures were mundane — a file picker that wouldn't take the file, an error, and two assistants explaining they lacked the resources or drivers. That last phrasing is odd: it makes a missing capability sound like a broken machine on their end rather than a thing the product simply doesn't do.</p>
+    <p>This isn't a safety story, it's a container-format story. The same six minutes of audio failed as a WhatsApp download and worked as an MP4. ChatGPT couldn't transcribe the file but could convert it; Meta couldn't take the original but could handle the converted version. Telling me they lacked the "resources or drivers" made a format problem sound like a missing capability on their end, which is a strange way to report it.</p>
 
     <h2>Conclusion</h2>
-    <p>A six-minute WhatsApp voice note defeated all four assistants. If the job is transcription, a dedicated transcription tool is the right answer; none of these chatbots could even get the file in the door.</p>
+    <p>The audio itself was never the obstacle — the file format was. One conversion later, Meta AI did the thing all four had declined. If the job is transcription, try changing the container before concluding the model can't do it.</p>
 
     <hr />
     <p>No audio or transcript is reproduced here — just what each assistant did with the upload.</p>
