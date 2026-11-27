@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asking ChatGPT to pick a $20 put · AI Stories</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <p class="nav"><a href="../../">⌂ Home</a></p>
+
+    <h1>Asking ChatGPT to pick a $20 put</h1>
+    <p><time datetime="2026-11-27">Nov 27, 2026</time></p>
+
+    <h2>Preface</h2>
+
+    <p>I was trying to understand options — just a little bit, just to see what's up. I've never bought an option, ever. I did enable it on my Robinhood, but I've never bought one. I'm really not that into trading; I just buy ETFs, pretty much. But I figured I'd try to learn through doing it: buy some sort of option for $20 and see what happens.</p>
+
+    <p>I didn't want to spend a few days finding the perfect one. Just a halfway decent one, I'll just get it, and whatever. Kind of like buying a lottery ticket.</p>
+
+    <p>So I opened ChatGPT, sent it screenshots of my Robinhood option chain, and asked it to walk me through a decent middle-of-the-road put. Twenty-two messages later, I hadn't bought anything.</p>
+
+    <h2>Chat</h2>
+
+    <p>The conversation started on the S&amp;P 500 index itself, SPX, around 7,297. ChatGPT's framework was sensible enough: a moderate-risk put, 30–45 days out, strike near the money — a 7,300 strike at a $30 premium, $3,000 a contract, breakeven 7,270. The problem was that the put I had actually selected on my screen was a December 28 SPX 9,400 put, which would have cost about $208,451. ChatGPT talked me off it, correctly.</p>
+
+    <p>Then came the budget: $20, tell me exactly what put to buy. That's when the S&amp;P 500 got too expensive for me in every form. SPX options are $100 a point, so ChatGPT moved me to SPY, the ETF — same index, smaller bets. But SPY was around $728, and its December 18 puts cost $1,365 to $1,614 a contract. The only ones that fit $20 were the far-out ones: a $495 put for $20.04, which would only pay off if SPY fell 32% in 21 days, to below $494.80. A January 15 put was worse — a $365 strike, betting on a roughly 50% fall in 49 days.</p>
+
+    <p>So we went smaller: SPYM, a cheaper S&amp;P 500 ETF at about $85.72. Its December 4 $81 put fit the budget at $20.04 — but it needed a 5.7% fall in seven days, which ChatGPT called fairly aggressive, not middle-of-the-road. We detoured into VIXW twice by accident (a volatility product, the opposite of what I wanted), then to IWM, the Russell 2000 ETF at $274.10. Its December 18 $210 put cost $20.04 and needed a 23.5% fall in 21 days. ChatGPT's verdict on that chain: pass.</p>
+
+    <p>By the end it was honest about it: no qualifying contract identified, and it didn't want to give me a bad trade just to fill the $20 budget. It asked whether I'd raise the budget to $40–$50.</p>
+
+    <p>One detail from the screenshots worth noting: my Robinhood screen showed $0 buying power available, the whole way through. I couldn't have bought any of these anyway.</p>
+
+    <h2>Notes</h2>
+    <ol>
+      <li>ChatGPT's rejections were, on the math, right. Every $20 contract it found was a lottery ticket — a 32% drop, a 50% drop, a 23.5% drop. Saying no to those was correct.</li>
+      <li>But the experience still felt incoherent. The assistant kept saying "let's find one" and then, at each step, "don't buy this." Twenty-two messages of being guided toward a trade and then talked out of it.</li>
+      <li>The $20 constraint made the task nearly impossible from the start, and ChatGPT never said so upfront. It discovered that fact one screenshot at a time, with me doing the legwork.</li>
+      <li>We disagreed about what the $20 was for. I was treating it as tuition — money I was fine throwing out the window to learn something. ChatGPT treated it as money to protect.</li>
+      <li>It's still not easy to tell which model you're talking to. The shared page shows only ChatGPT branding and a title — "Choisir un put modéré," in French, for a conversation conducted entirely in English.</li>
+    </ol>
+
+    <h2>Reflection</h2>
+    <p>This is a different failure from the ones in the earlier posts. Nothing was refused, and nothing was hallucinated. The advice was mostly right, and I still walked away with nothing — not even the bad trade I asked for. The assistant optimized for not being wrong rather than for the thing I actually asked it to do, which was: pick one, I'll buy it, and I'll learn from the outcome either way.</p>
+
+    <p>It also felt like there's an arbitrage opportunity in here somewhere: at this point, people still need to have trading knowledge, at least if you're doing it by hand. Maybe that's not even true if people are doing high-frequency trading — that's just not stuff I know about. But ChatGPT, honestly, did not seem like a great trading assistant.</p>
+
+    <h2>Conclusion</h2>
+    <p>I didn't buy anything. The $20 put stayed a hypothetical, and the lesson stayed hypothetical too. That's my experience using ChatGPT today: not wrong in a way you can point at, just not coherent enough to actually do the thing it was helping me do.</p>
+
+    <hr />
+    <p><a href="https://chatgpt.com/share/6b09e867-de9c-83e9-8c0c-31efdbb8051f">Read the full conversation on ChatGPT</a> (22 messages, Nov 27, 2026). The exchange above is condensed from it; the screenshots in the original are Robinhood option-chain images.</p>
+    <p>© 2026 AI Stories</p>
+  </body>
+</html>
