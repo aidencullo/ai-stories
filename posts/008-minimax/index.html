@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trying MiniMax M3 (and M3.1 Flash) · AI Stories</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <p class="nav"><a href="../../">⌂ Home</a></p>
+
+    <h1>Trying MiniMax M3 (and M3.1 Flash)</h1>
+    <p><time datetime="2026-11-27">Nov 27, 2026</time></p>
+
+    <h2>Preface</h2>
+
+    <p>MiniMax is a Shanghai-based AI company, founded in December 2021 by Yan Junjie, formerly of SenseTime. The model I used was MiniMax-M3, released June 1, 2026, and I also tried M3.1 Flash, released October 19, 2026 — a roughly 428-billion-parameter mixture-of-experts model with 23 billion active per token and a 1-million-token context. The thing I was actually talking to was MiniMax Code, the company's agentic harness, running an agent profile called "Mavis," which it told me was created on November 25, 2026 — two days before this session.</p>
+
+    <p>I mostly asked it about itself: how many credits I have, what its limits are, when it was created, who made it, and how it stacks up to its competitors. That last question it never actually answered.</p>
+
+    <h2>Chat</h2>
+
+    <p>The session ran from 15:11 to 15:44, sixteen messages from me. It started with the usual fumbling — "hey," a mangled keystroke, "dss" — and then "how many credits." That one got a long, researched answer, complete with a visible thinking process: it read files, ran a command, fetched the official docs, and then told me it couldn't actually read my balance, because the session runs in a cloud sandbox with no account-usage API. It sent me to Settings → Usage &amp; Models instead. The substance was that there is no published absolute per-user number: the M Plan defines limits as relative quotas — Go 1×, Explore 3×, Build 7.5× — enforced through a 5-hour window and a 7-day weekly window.</p>
+
+    <p>When I asked if it had limits, it said there's no cap on the conversation itself — it would keep talking past a cap it can't see or change. And it was right about that much: I never hit a daily message limit. I asked a few questions, kept talking while dictating this post, and it never stopped me.</p>
+
+    <p>Switching models was messier. I changed to M3, then back to Flash, and the session still reported running as M3 — the switch, it said, typically takes effect on the next turn. Swapping models doesn't buy a separate quota bucket either; the text models share the same windows. It's a speed-versus-intelligence tradeoff, not a way to save quota.</p>
+
+    <p>The question it never answered was the one I most wanted: how it stacks up to its competitors, and what its safeguards are. It showed a thinking process, fetched some web pages, and then… nothing. Three times over the rest of the session it told me it still owed me the teardown. I asked "where were you developed" and "who made you" — those it did answer, at length, with the Shanghai headquarters, the founder, and the note that MiniMax owns no data centers and runs training and inference on unnamed third-party cloud capacity.</p>
+
+    <h2>Notes</h2>
+    <ol>
+      <li>Speed is the problem. Sometimes it was quick, and sometimes it thought for a very long time about a really simple question. One prompt was still answering after a minute. There is a mechanism to queue up a question while it's processing, but that doesn't make the wait shorter.</li>
+      <li>It feels like it's doing too much per answer — hitting external APIs, checking things, fetching the web. It's connected to the internet, and it uses that connection seemingly seamlessly, but it overdoes it.</li>
+      <li>The answers are really verbose. ChatGPT can be like that too, but this was a lot.</li>
+      <li>Quality, though, was high. The answers I got were good — thorough, sourced, and mostly accurate about its own product.</li>
+      <li>No daily message limit surfaced. The limits that exist are relative quotas and rolling time windows, not a number of messages per day.</li>
+      <li>The unfinished teardown is the telling failure: it promised a competitors-and-safeguards answer, showed its work, and never delivered it — then kept reminding me it owed it to me.</li>
+    </ol>
+
+    <h2>Reflection</h2>
+    <p>The experience is a paradox: an agent that does visible, diligent work — reading docs, checking sources, showing its thinking — and still feels slow and unfinished. The slowness isn't one thing; it's the accumulation of every answer being a research project. A year ago this performance would have been decent. Now, when you can see models answering way quicker, waiting a minute for a simple question is too much to have a real conversation.</p>
+
+    <p>Compared with the others I've tried lately, I'd put it below Z.ai — which is only a little better — and below Euria, and below pretty much all the US models and even the European ones. I want to try Mistral next and see how it compares.</p>
+
+    <h2>Conclusion</h2>
+    <p>Unfortunately, kind of a thumbs down. Definitely below par, not really good enough — too slow, frankly, to have a real-time conversation, because I'm just waiting for it every single time. Still a pretty good model, though. The quality of the responses is still pretty high, from what I've seen. The speed is what kills it.</p>
+
+    <hr />
+    <p><a href="https://share.mcode.io/share/OM35WqKp36jd73S9KKRWxA">Read the full conversation on MiniMax Code</a> (16 messages, Nov 27, 2026). The exchange above is condensed from it.</p>
+    <p>© 2026 AI Stories</p>
+  </body>
+</html>
